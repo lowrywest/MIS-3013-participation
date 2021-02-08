@@ -6,6 +6,9 @@ namespace ConditionalStatements
     {
         static void Main(string[] args)
         {
+            Random rand = new Random();
+            int randomNum =rand.Next();
+
             int luckyNumber;
             string answer;
             Console.WriteLine("What is your favorite number? (Whole numbers only!)");
@@ -15,7 +18,7 @@ namespace ConditionalStatements
             {
                 Console.WriteLine(luckyNumber+" is not a valid integer. Goodbye!");
                 Environment.Exit(0);
-                //can also use the return; to exit the application
+                //can also use return; to exit the application
             }
            
             int remainder = luckyNumber % 7;
